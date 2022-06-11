@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+      <title>Matplotlib</title>
+      <meta charset="utf-8">
+  
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<py-env>
+
+- numpy
+- paths:
+    - /lucky.py
+</py-env>
+      </head>
+      <body>
+        <div id="mpl"></div>
+<py-script output="mpl">
+from lucky import display
+def buttonClick(event):
+    print(42)
+display()
+</py-script>
+
+    <button id="new-task-btn" class="p-2 text-white bg-blue-600 border border-blue-600 rounded" type="submit" pys-onClick="buttonClick">
+        Add task
+    </button>
+      </body>
+  </html>
+  
